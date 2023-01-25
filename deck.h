@@ -1,16 +1,15 @@
 #ifndef DECK_H
 #define DECK_H
 
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- *  * enum kind_e - suit enumeration
- *   *
- *    * @SPADE: 0
- *     * @HEART: 1
- *      * @CLUB: 2
- *       * @DIAMOND: 3
- *        */
+ *  * enum kind_e - Enumeration of card suits.
+ *   * @SPADE: Spades suit.
+ *    * @HEART: Hearts suit.
+ *     * @CLUB: Clubs suit.
+ *      * @DIAMOND: Diamonds suit.
+ *       */
 typedef enum kind_e
 {
 		SPADE = 0,
@@ -46,10 +45,6 @@ typedef struct deck_node_s
 				struct deck_node_s *next;
 } deck_node_t;
 
-	/*prototypes*/
 void sort_deck(deck_node_t **deck);
-int less_than(const card_t *a, const card_t *b);
-void cocktail_sort_list(deck_node_t **list);
 
-
-#endif /*DECK_H*/~
+#endif /* DECK_H */
